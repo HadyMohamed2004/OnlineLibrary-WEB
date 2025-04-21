@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detailed Book Info</title>
+    <link rel="stylesheet" href="BookInfo-styling.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Online Shelf</a></h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="myBooks.html">My Books</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="addBook.html">Add a book</a>
+                <a href="AdminDashboard.html">Dashboard</a>
+                <a href="userDashboard.html">My account</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Search Bar -->
+    <section class="search-section">
+        <div class="container">
+            <form class="search-bar">
+                <input type="text" placeholder="Search for a book..." />
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Book Details -->
+    <div class="container">
+        <div class="book-container">
+            <img src="https://covers.openlibrary.org/b/id/11446888-L.jpg" alt="Book Cover">
+            <div class="book-info">
+                <h1>Book Title</h1>
+                <h2>Name of the Author</h2>
+
+                <p><strong>Category:</strong> Genre of the book</p>
+                <p><strong>Description:</strong> A brief summary of what the book is about, its themes, storyline, and
+                    why it matters. This section should expand across multiple lines to better utilize space.</p>
+                <p><strong>Book ID:</strong> 1234</p>
+                <p><strong>Pages:</strong> 300</p>
+                <p><strong>Availability Status:</strong> Available</p>
+
+                <div class="button-group">
+                    <form action="#">
+                        <button type="submit">Borrow This Book</button>
+                    </form>
+                    <form action="#">
+                        <button type="submit">Add to Wishlist</button>
+                    </form>
+                    <form action="EditBook.html">
+                        <button type="submit">Edit/delete book</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>2025 Online Shelf.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

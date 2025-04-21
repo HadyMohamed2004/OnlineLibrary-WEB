@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Book - Admin</title>
+    <link rel="stylesheet" href="addBook-Styling.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Online Shelf</a></h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="myBooks.html">My Books</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="addBook.html">Add a book</a>
+                <a href="AdminDashboard.html">Dashboard</a>
+                <a href="userDashboard.html">My account</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="search-section">
+        <div class="container">
+            <form class="search-bar">
+                <input type="text" placeholder="Search for a book..." />
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="admin-container">
+            <h1>Add a new book</h1>
+
+            <form class="add-form" action="#" method="POST" enctype="multipart/form-data">
+                <!-- Book cover -->
+                <label>Current Book Cover:</label>
+                <img src="images.jpg" alt="Book Cover" class="book-cover-preview" />
+
+                <label for="cover">Choose Book Cover:</label>
+                <input type="file" id="cover" name="cover" accept="image/*" />
+
+                <!-- Book fields -->
+                <label for="title">Book Title:</label>
+                <input type="text" id="title" name="title" required placeholder="Enter the name of the book"/>
+
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required placeholder="Enter the name of the author"/>
+
+                <label for="category">Category:</label>
+                <select id="category" name="category">
+                    <option value="biography">Biography</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="history">History</option>
+                    <option value="horror">Horror</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="romance">Romance</option>
+                    <option value="sci-fi">Sci-Fi</option>
+                    <option value="thriller">Thriller</option>
+                </select>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4">Description of the book...</textarea>
+
+                <label for="pages">Number of Pages:</label>
+                <input type="number" id="pages" name="pages"/ placeholder="# of pages">
+
+                <label for="status">Availability:</label>
+                <select id="status" name="status">
+                    <option value="available" selected>Available</option>
+                    <option value="borrowed">Borrowed</option>
+                </select>
+
+                <div class="form-actions">
+                    <button type="submit" class="save-btn">Add Book</button>
+                    <button type="button" class="delete-btn">Cancel</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>2025 Online Shelf.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

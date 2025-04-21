@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Dashboard - Online Shelf</title>
+    <link rel="stylesheet" href="UserDahsboard-styling.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Online Shelf</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="myBooks.html">My Books</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="addBook.html">Add a book</a>
+                <a href="AdminDashboard.html">Dashboard</a>
+                <a href="userDashboard.html">My account</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="search-section">
+        <div class="container">
+            <form class="search-bar">
+                <input type="text" placeholder="Search books, authors, genre..." />
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="dashboard">
+        <div class="container">
+            <h2>Welcome, User!</h2>
+            <div class="card-container">
+                <!-- My Books Card -->
+                <div class="card">
+                    <h3>My Books</h3>
+                    <div class="book-grid">
+                        <div class="book-card">
+                            <img src="https://covers.openlibrary.org/b/id/10648514-L.jpg" alt="Book Cover">
+                            <p>Tyll</p>
+                        </div>
+                        <div class="book-card">
+                            <img src="https://covers.openlibrary.org/b/id/11446888-L.jpg" alt="Book Cover">
+                            <p>The Marian</p>
+                        </div>
+                        <div class="book-card">
+                            <img src="https://covers.openlibrary.org/b/id/11326818-L.jpg" alt="Book Cover">
+                            <p>A Gentleman in Moscow</p>
+                        </div>
+                    </div>
+                    <a href="#">Go to My Books</a>
+                </div>
+
+                <!-- My Wishlist Card -->
+                <div class="card">
+                    <h3>My Wishlist</h3>
+                    <div class="book-grid">
+                        <div class="book-card">
+                            <img src="https://covers.openlibrary.org/b/id/13768581-M.jpg" alt="Wishlist 1">
+                            <p>Book Title 1</p>
+                        </div>
+                        <div class="book-card">
+                            <img src="https://covers.openlibrary.org/b/id/9269962-M.jpg" alt="Wishlist 2">
+                            <p>Book Title 2</p>
+                        </div>
+                        <div class="book-card">
+                            <img src="https://covers.openlibrary.org/b/id/12622155-M.jpg" alt="Wishlist 3">
+                            <p>Book Title 3</p>
+                        </div>
+                    </div>
+                    <a href="#">Go to Wishlist</a>
+                </div>
+
+                <!-- Account Settings Card -->
+                <div class="card">
+                    <h3>Account Settings</h3>
+                    <div class="settings-container">
+                        <div class="setting-item">
+                            <h4>Change Email</h4>
+                            <p>Update your registered email address</p>
+                            <a href="#">Edit Email</a>
+                        </div>
+                        <div class="setting-item">
+                            <h4>Change Password</h4>
+                            <p>Update your account password</p>
+                            <a href="#">Edit Password</a>
+                        </div>
+                        <div class="setting-item">
+                            <h4>Manage Preferences</h4>
+                            <p>Customize your notification preferences</p>
+                            <a href="#">Edit Preferences</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>2025 Online Shelf.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

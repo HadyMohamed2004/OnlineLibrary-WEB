@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="AdminDashboard-Styling.css" />
+</head>
+
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Online Shelf</a></h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="myBooks.html">My Books</a>
+                <a href="wishlist.html">Wishlist</a>
+                <a href="addBook.html">Add a book</a>
+                <a href="AdminDashboard.html">Dashboard</a>
+                <a href="userDashboard.html">My account</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="search-section">
+        <div class="container">
+            <form class="search-bar">
+                <input type="text" placeholder="Search books, authors, genre..." />
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Dashboard Main -->
+    <section class="dashboard">
+        <div class="container">
+            <h2>Admin Dashboard</h2>
+
+            <div class="dashboard-grid">
+                <!-- Books Management Card -->
+                <div class="dashboard-card books-management">
+                    <h3>Book Management</h3>
+                    <div class="book-grid">
+                        <div class="book-item">
+                            <img src="https://covers.openlibrary.org/b/id/10648514-M.jpg" alt="Book Cover">
+                            <div class="book-actions">
+                                <p>Tyll by Daniel Kehlmann</p>
+                                <div class="action-buttons">
+                                    <button class="edit-btn">Edit</button>
+                                    <button class="delete-btn">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="book-item">
+                            <img src="https://covers.openlibrary.org/b/id/11446888-M.jpg" alt="Book Cover">
+                            <div class="book-actions">
+                                <p>The Martian by Andy Weir</p>
+                                <div class="action-buttons">
+                                    <button class="edit-btn">Edit</button>
+                                    <button class="delete-btn">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="add-btn">Add New Book</button>
+                        <a href="#" class="view-all">View all books →</a>
+                    </div>
+                </div>
+
+                <!-- User Management Card -->
+                <div class="dashboard-card user-management">
+                    <h3>User Management</h3>
+                    <div class="user-list">
+                        <div class="user-item">
+                            <div class="user-avatar">JD</div>
+                            <div class="user-details">
+                                <p class="user-name">John Doe</p>
+                                <p class="user-email">john.doe@example.com</p>
+                            </div>
+                            <div class="user-actions">
+                                <button class="view-btn">View</button>
+                                <button class="suspend-btn">Suspend</button>
+                            </div>
+                        </div>
+                        <div class="user-item">
+                            <div class="user-avatar">JS</div>
+                            <div class="user-details">
+                                <p class="user-name">Jane Smith</p>
+                                <p class="user-email">jane.smith@example.com</p>
+                            </div>
+                            <div class="user-actions">
+                                <button class="view-btn">View</button>
+                                <button class="suspend-btn">Suspend</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="view-all">View all users →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>2025 Online Shelf.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
