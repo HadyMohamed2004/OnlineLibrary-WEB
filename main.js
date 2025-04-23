@@ -10,6 +10,7 @@ if (c_status == "logged out") {
         <a href="../account_setup/login.html">Login</a>
         <a href="../account_setup/signUp.html">Register</a>
     `;
+
 } else if (c_status == "logged in") {
   nav.innerHTML = `
         <a href="../index.html">Home</a>
