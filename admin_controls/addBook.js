@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (confirm("Are you sure you want to cancel? All changes will be lost.")) {
             form.reset();
             previewImg.src = "images.jpg"; 
-            window.location.href = "myBooks.html";
+            window.location.href = "../myBooks.html";
         }
     });
 
