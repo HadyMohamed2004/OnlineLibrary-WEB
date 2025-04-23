@@ -6,7 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const storedBooks = JSON.parse(localStorage.getItem("books")) || [];
 
     // Render all stored books
-    storedBooks.forEach(book => {
+function renderBooks() {
+    bookGrid.innerHTML = ""; // Clear existing content
+    const books = JSON.parse(localStorage.getItem("books")) || [];
+
+    books.slice(0, 2).forEach(book => {
         const bookItem = document.createElement("div");
         bookItem.classList.add("book-item");
         bookItem.setAttribute("data-id", book.id);
@@ -24,6 +28,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         bookGrid.appendChild(bookItem);
     });
+}
+
+ renderBooks();
 
     // Delete book
     bookGrid.addEventListener("click", (e) => {
@@ -38,6 +45,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 bookItem.remove();
             }
+			
+			renderBooks();
         }
 
         // Edit button
