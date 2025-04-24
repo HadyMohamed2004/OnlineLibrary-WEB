@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: #f4f4f4;
+    background-color: #f4f4f4;
     color: #333;
 }
 
@@ -55,7 +55,7 @@ header::after {
     clear: both;
 }
 
-/* search */
+/* Search*/
 .search-section {
     background: #fff;
     padding: 30px 0 20px;
@@ -90,83 +90,88 @@ header::after {
     background: #333;
 }
 
-/* Book Container */
-.book-container {
+/* admin section*/
+.admin-container {
     background: #fff;
-    margin: 40px auto;
     padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-    min-height: 500px;
+    margin: 50px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
-.book-container img {
-    width: 250px;
-    height: 370px;
+/* Form */
+.admin-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* Book Cover */
+.book-cover-preview {
+    width: 150px;
+    height: 210px;
     object-fit: cover;
-    border-radius: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
 }
 
-/* BookInfo Section */
-.book-info {
-    flex: 1;
+/* Form Layout */
+.add-form {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    gap: 16px;
 }
 
-.book-info h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+.add-form label {
+    font-weight: bold;
 }
 
-.book-info h2 {
-    font-size: 24px;
-    color: #555;
-    margin-bottom: 20px;
-}
-
-.book-info p {
-    font-size: 17px;
-    line-height: 1.8;
-    margin-bottom: 14px;
-}
-
-.book-info strong {
-    font-weight: 600;
+.add-form input,
+.add-form textarea,
+.add-form select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    width: 100%;
 }
 
 /* Buttons */
-.button-group {
-    margin-top: 30px;
+.form-actions {
     display: flex;
+    justify-content: space-between;
     gap: 20px;
-    flex-wrap: wrap;
+    margin-top: 30px;
 }
 
-.button-group form {
-    flex: 1;
-    min-width: 180px;
-}
-
-.button-group button {
-    padding: 12px 20px;
-    font-size: 16px;
-    background: #1a1a1a;
-    color: white;
+.save-btn,
+.delete-btn {
+    padding: 12px 24px;
     border: none;
-    border-radius: 8px;
+    font-weight: bold;
+    border-radius: 6px;
     cursor: pointer;
-    width: 100%;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 15px;
+    flex: 1;
 }
 
-.button-group button:hover {
-    background-color: #333;
-    transform: translateY(-2px);
+.save-btn {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.save-btn:hover {
+    background-color: #218838;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
 }
 
 /* Footer */
