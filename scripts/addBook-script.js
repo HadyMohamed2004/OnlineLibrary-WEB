@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Check if user is logged in and is admin
     const currentUser = getCurrentUser();
 
-    if (!currentUser || currentUser.role !== 'admin') {
+    if (!currentUser || currentUser.role !== 'ROLE_ADMIN') {
         // Redirect to login page if not admin
         alert('You need to be logged in as an admin to access this page.');
         window.location.href = 'logIn.html';
