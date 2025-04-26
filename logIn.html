@@ -4,30 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - Online Shelf</title>
-    <link rel="stylesheet" href="../main_ui.css" />
     <link rel="stylesheet" href="Login-styling.css" />
-
 </head>
 
 <body>
     <header>
-        <h1 class="logo"><a href="../index.html">Online Shelf</a></h1>
-        <nav>
-        </nav>
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Online Shelf</a></h1>
+        </div>
     </header>
 
     <div class="login-container">
         <section class="login-box">
             <h2>Welcome Back</h2>
-            <form class="login-form" action="#" method="POST">
+            <form class="login-form" id="login-form">
                 <label for="username">Username or Email</label>
                 <input type="text" id="username" name="username" required />
 
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required />
 
+                <div id="login-error" class="error-message"></div>
+
                 <button type="submit" class="login-btn">Log In</button>
-                <p class="signup-link">Don't have an account? <a href="../account_setup/signUp.html">Sign up</a></p>
+                <p class="signup-link">Don't have an account? <a href="signUp.html">Sign up</a></p>
             </form>
         </section>
     </div>
@@ -37,8 +37,9 @@
             <p>2025 Online Shelf.</p>
         </div>
     </footer>
-</body>
 
-<script src="../main.js"></script>
+    <script src="shared.js"></script>
+    <script src="login-script.js"></script>
+</body>
 
 </html>

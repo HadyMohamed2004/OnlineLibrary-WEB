@@ -5,23 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up - Online Shelf</title>
     <link rel="stylesheet" href="Signup-styling.css" />
-    <link rel="stylesheet" href="../main_ui.css" />
-
 </head>
 
 <body>
     <!-- Header with Logo Only -->
     <header>
-        <h1 class="logo"><a href="../index.html">Online Shelf</a></h1>
-        <nav>
-        </nav>
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Online Shelf</a></h1>
+        </div>
     </header>
 
     <!-- Signup Form -->
     <div class="container">
         <section class="signup-box">
             <h2>Create an Account</h2>
-            <form class="signup-form" action="#" method="POST">
+            <form class="signup-form" id="signup-form">
                 <label for="fullname">Full Name</label>
                 <input type="text" id="fullname" name="fullname" required />
 
@@ -30,13 +28,6 @@
 
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required />
-                
-                <label for="role">Role</label>
-                <select id="role" name="role" required>
-                    <option value="">Select a role</option>
-                    <option value="user">User</option>
-                    <option value="admin">Admin</option>
-                </select>
 
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required />
@@ -44,8 +35,10 @@
                 <label for="confirm-password">Confirm Password</label>
                 <input type="password" id="confirm-password" name="confirm-password" required />
 
+                <div id="signup-error" class="error-message"></div>
+
                 <button type="submit" class="signup-btn">Sign Up</button>
-                <p class="login-link">Already have an account? <a href="../account_setup/logIn.html">Log in</a></p>
+                <p class="login-link">Already have an account? <a href="logIn.html">Log in</a></p>
             </form>
         </section>
     </div>
@@ -55,9 +48,9 @@
             <p>2025 Online Shelf.</p>
         </div>
     </footer>
+
+    <script src="shared.js"></script>
+    <script src="signup-script.js"></script>
 </body>
-
-<script src="../main.js"></script>
-
 
 </html>

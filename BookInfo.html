@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -13,12 +14,7 @@
         <div class="container">
             <h1 class="logo"><a href="index.html">Online Shelf</a></h1>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="myBooks.html">My Books</a>
-                <a href="wishlist.html">Wishlist</a>
-                <a href="addBook.html">Add a book</a>
-                <a href="AdminDashboard.html">Dashboard</a>
-                <a href="userDashboard.html">My account</a>
+                <!-- Navigation will be dynamically updated by JavaScript -->
             </nav>
         </div>
     </header>
@@ -36,26 +32,22 @@
     <!-- Book Details -->
     <div class="container">
         <div class="book-container">
-            <img src="https://covers.openlibrary.org/b/id/11446888-L.jpg" alt="Book Cover">
+            <img src="" alt="Book Cover">
             <div class="book-info">
                 <h1>Book Title</h1>
-                <h2>Name of the Author</h2>
+                <h2>Author Name</h2>
 
-                <p><strong>Category:</strong> Genre of the book</p>
-                <p><strong>Description:</strong> A brief summary of what the book is about, its themes, storyline, and
-                    why it matters. This section should expand across multiple lines to better utilize space.</p>
-                <p><strong>Book ID:</strong> 1234</p>
-                <p><strong>Pages:</strong> 300</p>
-                <p><strong>Availability Status:</strong> Available</p>
+                <p><strong>Category:</strong> Genre</p>
+                <p><strong>Description:</strong> Book description</p>
+                <p><strong>Book ID:</strong> ID</p>
+                <p><strong>Pages:</strong> 000</p>
+                <p><strong>Availability Status:</strong> Status</p>
 
                 <div class="button-group">
-                    <form action="#">
-                        <button type="submit">Borrow This Book</button>
-                    </form>
-                    <form action="#">
-                        <button type="submit">Add to Wishlist</button>
-                    </form>
-                    <form action="EditBook.html">
+                    <button id="borrow-btn" type="button">Borrow This Book</button>
+                    <button id="wishlist-btn" type="button">Add to Wishlist</button>
+                    <!-- Admin-only button, will be shown/hidden by JavaScript -->
+                    <form id="edit-book-form" action="EditBook.html" style="display: none;">
                         <button type="submit">Edit/delete book</button>
                     </form>
                 </div>
@@ -68,6 +60,9 @@
             <p>2025 Online Shelf.</p>
         </div>
     </footer>
+
+    <script src="shared.js"></script>
+    <script src="bookInfo-script.js"></script>
 </body>
 
 </html>

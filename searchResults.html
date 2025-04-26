@@ -10,14 +10,9 @@
 <body>
     <header>
         <div class="container">
-            <h1 class="logo">Online Shelf</h1>
+            <h1 class="logo"><a href="index.html">Online Shelf</a></h1>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="myBooks.html">My Books</a>
-                <a href="wishlist.html">Wishlist</a>
-                <a href="addBook.html">Add a book</a>
-                <a href="AdminDashboard.html">Dashboard</a>
-                <a href="userDashboard.html">My account</a>
+                <!-- Navigation will be dynamically updated by JavaScript -->
             </nav>
         </div>
     </header>
@@ -25,7 +20,7 @@
     <section class="search-section">
         <div class="container">
             <form class="search-bar">
-                <input type="text" placeholder="Search books, authors, genre..." />
+                <input type="text" id="search-input" placeholder="Search books, authors, genre..." />
                 <button type="submit">Search</button>
             </form>
         </div>
@@ -36,43 +31,11 @@
             <h2>Search Results</h2>
 
             <div class="search-query">
-                <h3>Results for: "Tyll"</h3>
+                <h3>Results for: "<span id="search-term"></span>"</h3>
             </div>
 
-            <div class="card-container">
-
-                <div class="card">
-                    <h3>Search Result 1</h3>
-                    <div class="book-grid">
-                        <div class="book-card">
-                            <img src="https://covers.openlibrary.org/b/id/10648514-L.jpg" alt="Book Cover">
-                            <p>Tyll</p>
-                        </div>
-                    </div>
-                    <a href="#">View Book</a>
-                </div>
-
-                <div class="card">
-                    <h3>Search Result 2</h3>
-                    <div class="book-grid">
-                        <div class="book-card">
-                            <img src="https://covers.openlibrary.org/b/id/11446888-L.jpg" alt="Book Cover">
-                            <p>The Marian</p>
-                        </div>
-                    </div>
-                    <a href="#">View Book</a>
-                </div>
-
-                <div class="card">
-                    <h3>Search Result 3</h3>
-                    <div class="book-grid">
-                        <div class="book-card">
-                            <img src="https://covers.openlibrary.org/b/id/11326818-L.jpg" alt="Book Cover">
-                            <p>A Gentleman in Moscow</p>
-                        </div>
-                    </div>
-                    <a href="#">View Book</a>
-                </div>
+            <div class="card-container" id="results-container">
+                <!-- Search results will be populated by JavaScript -->
             </div>
         </div>
     </section>
@@ -82,6 +45,9 @@
             <p>2025 Online Shelf.</p>
         </div>
     </footer>
+
+    <script src="shared.js"></script>
+    <script src="searchResults-script.js"></script>
 </body>
 
 </html>

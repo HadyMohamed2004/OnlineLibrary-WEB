@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edit Book - Admin</title>
-    <link rel="stylesheet" href="EditBook-Styling.css" />
+    <title>Add Book - Admin</title>
+    <link rel="stylesheet" href="addBook-Styling.css" />
 </head>
 
 <body>
-    <!-- Header -->
     <header>
         <div class="container">
             <h1 class="logo"><a href="index.html">Online Shelf</a></h1>
@@ -18,7 +17,6 @@
         </div>
     </header>
 
-    <!-- Search Bar -->
     <section class="search-section">
         <div class="container">
             <form class="search-bar">
@@ -28,26 +26,25 @@
         </div>
     </section>
 
-    <!-- Edit Form -->
     <div class="container">
         <section class="admin-container">
-            <h1>Edit Book Information</h1>
+            <h1>Add a new book</h1>
 
-            <form class="edit-form" id="edit-book-form" enctype="multipart/form-data">
+            <form class="add-form" id="add-book-form" enctype="multipart/form-data">
                 <!-- Book cover -->
                 <label>Current Book Cover:</label>
                 <img src="https://via.placeholder.com/150x210?text=Book+Cover" alt="Book Cover"
                     class="book-cover-preview" id="cover-preview" />
 
                 <label for="cover-url">Book Cover URL:</label>
-                <input type="url" id="cover-url" name="cover-url" placeholder="Enter image URL" />
+                <input type="url" id="cover-url" name="cover-url" placeholder="Enter image URL or use a placeholder" />
 
                 <!-- Book fields -->
                 <label for="title">Book Title:</label>
-                <input type="text" id="title" name="title" required />
+                <input type="text" id="title" name="title" required placeholder="Enter the name of the book" />
 
                 <label for="author">Author:</label>
-                <input type="text" id="author" name="author" required />
+                <input type="text" id="author" name="author" required placeholder="Enter the name of the author" />
 
                 <label for="category">Category:</label>
                 <select id="category" name="category">
@@ -64,20 +61,21 @@
                 </select>
 
                 <label for="description">Description:</label>
-                <textarea id="description" name="description" rows="4"></textarea>
+                <textarea id="description" name="description" rows="4"
+                    placeholder="Description of the book..."></textarea>
 
                 <label for="pages">Number of Pages:</label>
-                <input type="number" id="pages" name="pages" />
+                <input type="number" id="pages" name="pages" placeholder="# of pages" />
 
                 <label for="status">Availability:</label>
                 <select id="status" name="status">
-                    <option value="available">Available</option>
+                    <option value="available" selected>Available</option>
                     <option value="borrowed">Borrowed</option>
                 </select>
 
                 <div class="form-actions">
-                    <button type="submit" class="save-btn">Save Changes</button>
-                    <button type="button" class="delete-btn" id="delete-btn">Delete Book</button>
+                    <button type="submit" class="save-btn">Add Book</button>
+                    <button type="button" class="delete-btn" id="cancel-btn">Cancel</button>
                 </div>
             </form>
         </section>
@@ -90,7 +88,7 @@
     </footer>
 
     <script src="shared.js"></script>
-    <script src="editBook-script.js"></script>
+    <script src="addBook-script.js"></script>
 </body>
 
 </html>
