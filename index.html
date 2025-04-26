@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online Shelf</title>
-    <link rel="stylesheet" href="Home-styling.css" />
+    <link rel="stylesheet" href="styles/Home-styling.css" />
 </head>
 
 <body>
@@ -20,8 +20,8 @@
     <section class="search-section">
         <div class="container">
             <h2>Find your next read</h2>
-            <form class="search-bar">
-                <input type="text" placeholder="Search books, authors, genre..." />
+            <form class="search-bar" id="search-form" action="src/searchResults.html" method="get">
+                <input type="text" name="q" placeholder="Search books, authors, genre..." required />
                 <button type="submit">Search</button>
             </form>
         </div>
@@ -38,11 +38,11 @@
 
     <footer>
         <div class="container">
-            <p>2025 Online Shelf.</p>
+            <p>&copy; 2025 Online Shelf. All rights reserved.</p>
         </div>
     </footer>
-    <script src="shared.js"></script>
-    <script src="home-script.js"></script>
+    <script src="scripts/shared.js"></script>
+    <script src="scripts/home-script.js"></script>
 </body>
 
 </html>

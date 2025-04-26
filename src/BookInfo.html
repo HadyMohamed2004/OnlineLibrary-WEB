@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Information - Online Shelf</title>
+    <link rel="stylesheet" href="../styles/BookInfo-styling.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="../index.html">Online Shelf</a></h1>
+            <nav>
+                <!-- Navigation will be dynamically updated by JavaScript -->
+            </nav>
+        </div>
+    </header>
+
+    <!-- Search Bar -->
+    <section class="search-section">
+        <div class="container">
+            <form class="search-bar">
+                <input type="text" placeholder="Search for a book..." />
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Book Details -->
+    <div class="container">
+        <div class="book-container">
+            <img src="" alt="Book Cover">
+            <div class="book-info">
+                <h1>Book Title</h1>
+                <h2>Author Name</h2>
+
+                <p><strong>Category:</strong> Genre</p>
+                <p><strong>Description:</strong> Book description</p>
+                <p><strong>Book ID:</strong> ID</p>
+                <p><strong>Pages:</strong> 000</p>
+                <p><strong>Availability Status:</strong> Status</p>
+
+                <div class="button-group">
+                    <button id="borrow-btn" type="button">Borrow This Book</button>
+                    <button id="wishlist-btn" type="button">Add to Wishlist</button>
+                    <!-- Admin-only button, will be shown/hidden by JavaScript -->
+                    <form id="edit-book-form" action="EditBook.html" style="display: none;">
+                        <button type="submit">Edit/delete book</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>2025 Online Shelf.</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/shared.js"></script>
+    <script src="../scripts/bookInfo-script.js"></script>
+</body>
+
+</html>
